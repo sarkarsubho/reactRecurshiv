@@ -1,0 +1,31 @@
+.mainReplayBox{
+ display: flex;
+ gap: 10px;
+}
+.expandButton{
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    background: local;
+    color: aliceblue;
+    border: none;
+    height: fit-content;
+}
+.expandButtonActive{
+    cursor: pointer;
+   
+}
+.replayOption > span {
+    margin: 10px;
+    cursor: pointer;
+}
+.replayOption > span:nth-child(1) {
+    margin: 0px;
+    cursor: pointer;
+
+}
+.commentBody{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
