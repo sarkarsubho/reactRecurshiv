@@ -6,8 +6,37 @@
   background-color: #282c34;
   min-height: 100vh;
   color: white;
+  display: grid;
+  place-items: center;
+  
 }
-
+.newcomment{
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.post{
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  background: rgb(22, 153, 22);
+  cursor: pointer;
+  color: aliceblue;
+}
+.post:active{
+  opacity: .7;
+}
+.commentBox{
+  display: flex;
+  justify-content: center;
+}
 
 
 

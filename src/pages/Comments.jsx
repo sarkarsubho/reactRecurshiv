@@ -1,13 +1,11 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./style.css";
+import "../App.css"
 
-export const Comments = ({ data }) => {
-  let [comment, setComment] = useState(data);
+export const Comments = ({ data, handleUpdate, id }) => {
   const [visiable, setVisible] = useState(false);
   const [showInputBox, setShowInputBox] = useState(false);
   const [input, setInput] = useState("");
-
 
   const addComment = () => {
     let newdata = {
@@ -15,17 +13,14 @@ export const Comments = ({ data }) => {
       author: data.author,
       body: input,
     };
-    if (!comment.replies) {
-      let updatedData = { ...comment, replies: [newdata] };
-      setComment(updatedData);
-      // return comment
+    if (!data.replies) {
+      data.replies = [newdata];
     } else {
-      let updatedData = { ...comment, replies: [...comment.replies, newdata] };
-
-      setComment(updatedData);
-      // return comment
+      data.replies.push(newdata);
     }
-    console.log(comment);
+    console.log(data);
+    handleUpdate(id);
+    setInput("");
   };
   const expand = () => {
     setVisible(!visiable);
@@ -42,7 +37,7 @@ export const Comments = ({ data }) => {
         </button>
         <div className="replayBox">
           <div className="commentBody">
-            <span style={{ marginBottom: "0px" }}>{comment.body}</span>
+            <span style={{ marginBottom: "0px" }}>{data.body}</span>
 
             <div className="replayOption">
               <span
@@ -64,18 +59,25 @@ export const Comments = ({ data }) => {
                   onChange={(e) => {
                     setInput(e.target.value);
                   }}
+                  value={input}
+                  className="newcomment"
+                  placeholder="add New"
                 />
-                <button onClick={addComment}>Add Comment</button>
+                <button className="post" onClick={addComment}>Replay</button>
               </div>
             )}
           </div>
 
           {visiable &&
-            comment.replies &&
-            comment.replies.map((replay) => {
+            data.replies &&
+            data.replies.map((replay) => {
               return (
                 <div style={{ padding: "10px" }} key={replay.id}>
-                  <Comments data={replay}></Comments>
+                  <Comments
+                    data={replay}
+                    handleUpdate={handleUpdate}
+                    id={id}
+                  ></Comments>
                 </div>
               );
             })}

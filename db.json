@@ -19,7 +19,24 @@
               "author": "albert",
               "body": "Thanks for the update!",
               "timestamp": "Sun Aug 02 2020 18:15:45 GMT+0530",
-              "points": "8"
+              "points": "8",
+              "replies": [
+                {
+                  "id": 1665248057902,
+                  "author": "albert",
+                  "body": "ok sir"
+                },
+                {
+                  "id": 1665248161133,
+                  "author": "albert",
+                  "body": "ok"
+                }
+              ]
+            },
+            {
+              "id": 1665247809305,
+              "author": "haren",
+              "body": " looking into it"
             }
           ]
         },
@@ -29,6 +46,101 @@
           "body": "looking forward for the demo!",
           "timestamp": "Sun Aug 02 2020 18:10:45 GMT+0530",
           "points": "2"
+        },
+        {
+          "id": 1665247153848,
+          "author": "albert",
+          "body": "continue testing..."
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "author": "albert",
+      "body": "Whats the status?",
+      "timestamp": "Sun Aug 02 2020 18:08:45 GMT+0530",
+      "points": "2",
+      "replies": [
+        {
+          "id": "003",
+          "author": "haren",
+          "body": "Wrote the test suites, waiting for approval?",
+          "timestamp": "Sun Aug 02 2020 18:12:45 GMT+0530",
+          "points": "3",
+          "replies": [
+            {
+              "id": "004",
+              "author": "albert",
+              "body": "Thanks for the update!",
+              "timestamp": "Sun Aug 02 2020 18:15:45 GMT+0530",
+              "points": "8"
+            }
+          ]
+        },
+        {
+          "id": "002",
+          "author": "Nrupul",
+          "body": "looking forward for the demo!",
+          "timestamp": "Sun Aug 02 2020 18:10:45 GMT+0530",
+          "points": "2",
+          "replies": [
+            {
+              "id": 1665256442722,
+              "author": "Nrupul",
+              "body": "its on the way"
+            }
+          ]
+        },
+        {
+          "id": 1665248226797,
+          "author": "albert",
+          "body": " testing done",
+          "replies": [
+            {
+              "id": 1665248243800,
+              "author": "albert",
+              "body": "yes sir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1665258575045,
+      "body": "any Update",
+      "points": 2,
+      "replies": [
+        {
+          "id": 1665259354498,
+          "body": "no"
+        }
+      ]
+    },
+    {
+      "id": 1665258645325,
+      "body": "what is the Position ?",
+      "points": 2,
+      "replies": [
+        {
+          "id": 1665258707690,
+          "body": "making test suit .",
+          "replies": [
+            {
+              "id": 1665258762986,
+              "body": "fine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1665258872597,
+      "body": "Do DSA",
+      "points": 2,
+      "replies": [
+        {
+          "id": 1665259078134,
+          "body": "I Will."
         }
       ]
     }
